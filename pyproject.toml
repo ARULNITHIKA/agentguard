@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataguard-ai"
+version = "0.1.0"
+description = "AI agent data governance and runtime risk monitoring"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
