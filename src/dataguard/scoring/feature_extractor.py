@@ -5,12 +5,16 @@ TOOL_FEATURES = {
 }
 
 
-def extract_features(event):
+def extract_features(event, tool_frequency=1):
+
     tool = event["tool"]
 
     tool_id = TOOL_FEATURES.get(tool, 4)
 
+    risk_score = event.get("risk_score", 0)
+
     return [
         tool_id,
-        event.get("risk_score", 0),
+        risk_score,
+        tool_frequency,
     ]
