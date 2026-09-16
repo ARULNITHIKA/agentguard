@@ -1,4 +1,4 @@
-AgentGuard
+**AgentGuard**
 Runtime Trust, Observability & Risk Monitoring for AI Agents
 
 AgentGuard is an experimental AI/ML prototype exploring how autonomous AI agents can be monitored for tool usage, data access, policy violations, risk, and unusual behaviour at runtime.
@@ -7,7 +7,7 @@ The project explores a simple question:
 
 If an AI agent can autonomously access data and use tools, how do we know that its behaviour remains within its intended boundaries?
 
-Why AgentGuard?
+**Why AgentGuard?**
 
 As AI systems move from generating responses to taking actions, traditional application monitoring may not be enough.
 
@@ -23,7 +23,7 @@ AgentGuard explores whether runtime behavioural telemetry can provide an additio
 
 The current prototype combines deterministic policy enforcement with risk scoring, event logging, feature extraction, and initial unsupervised anomaly detection.
 
-Architecture
+**Architecture**
                          AGENTGUARD
                               │
                               ▼
@@ -51,7 +51,7 @@ Architecture
                        Assessment ◄─────────┘
 
 
-Current Prototype
+**Current Prototype**
 
 AgentGuard currently implements five core components.
 
@@ -119,7 +119,7 @@ AgentGuard uses Isolation Forest, an unsupervised machine-learning algorithm, as
 The intention is not simply to classify individual actions as "good" or "bad", but to investigate whether an agent's behavioural pattern over time can be used as a signal for runtime risk.
 
 
-Example Runtime Behaviour
+_Example Runtime Behaviour_
 
 A simple agent interaction can produce:
 
@@ -180,7 +180,7 @@ agentguard/
 └── README.md
 
 
-Research Direction
+_Research Direction_
 
 The current implementation is intentionally a prototype.
 
@@ -200,11 +200,11 @@ adaptive policy enforcement
 
 A longer-term goal would be to investigate whether policy-based controls and behavioural anomaly detection can complement each other rather than treating them as separate mechanisms.
 
-Current Status
+**Current Status**
 
-Prototype stage
+**Prototype stage**
 
-Implemented:
+_Implemented:_
 
 Agent abstraction
 
@@ -221,7 +221,7 @@ Initial Isolation Forest integration
 Example runtime scenarios
 
 
-Planned:
+_Planned:_
 
 Persistent event storage
 
